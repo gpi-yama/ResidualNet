@@ -1,11 +1,10 @@
 # 
-# cnn_pred_1.0.1.py
+#
 # (C) 2018 R.Yamaguchi
 # Residual network
 # non pooling
 # image size = 64*128
 #
-# return uzb 
 
 import numpy as np
 import tensorflow as tf
@@ -240,8 +239,8 @@ if __name__ == '__main__':
         for j in range(1,2501,1):
             inp_name.append([i,j])
             
-    inp_file = np.load('../picture_out_1.3/vorpict_01-61_partly.npy')
-    uz_r = np.loadtxt('uzb.csv', dtype=float)[1:2501]
+    inp_file = np.load('inp.npy')
+    uz_r = np.loadtxt('uz.csv', dtype=float)[1:2501]
     
     uz_r = uz_r / (4.0 * math.pi) * 128
     print(np.shape(uz_r))
