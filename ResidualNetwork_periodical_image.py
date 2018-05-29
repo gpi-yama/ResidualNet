@@ -223,9 +223,7 @@ def progress_bar(epoch, epochs, n, n_batch, train_loss, val_loss, interval):
 
 if __name__ == '__main__':
     print('----------------------------------', flush=True)
-    print('------start cnn_pred_1.0.1.py-----', flush=True)
     print('----- (C) 2018 R.Yamaguchi--------', flush=True)
-    print('------code for the pict_out-------', flush=True)
     print('----------------------------------', flush=True)
 
     os.environ["KMP_BLOCKTIME"] = "1"
